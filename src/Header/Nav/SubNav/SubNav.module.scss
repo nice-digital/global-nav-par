@@ -1,0 +1,122 @@
+@use '../../../styles/global-nav-colours' as *;
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '../../header-settings';
+
+.wrapper {
+  background: $subnav-background;
+  color: $subnav-text;
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.link {
+  border: utils.rem(spacing.$x-small) solid $subnav-link-border;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  color: colours.$text;
+  display: block;
+  font-weight: normal;
+  padding: utils.rem(
+    spacing.$small spacing.$medium spacing.$small spacing.$large
+  );
+  text-decoration: none;
+
+  &:focus {
+    color: colours.$text;
+    outline: utils.rem(spacing.$x-small) solid colours.$focus;
+    outline-offset: utils.rem(-(spacing.$small));
+  }
+
+  &:visited,
+  &:hover,
+  &:active {
+    border: utils.rem(spacing.$x-small) solid $subnav-link-hover-border;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    color: $subnav-link-hover-text;
+  }
+
+  &:hover {
+    background: $subnav-link-hover-background;
+    color: colours.$text;
+    text-decoration-line: underline;
+  }
+}
+
+.imageLink {
+  display: none;
+}
+
+@include media-queries.mq($from: md) {
+  .wrapper {
+    border-bottom: utils.rem(spacing.$xx-small) solid $subnav-border;
+    bottom: 0;
+    height: utils.rem(header-settings.$sub-nav-height);
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .imageLink {
+    display: inline-block;
+  }
+
+  .list {
+    @include layout.container;
+    height: 100%;
+
+    li {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .link {
+    border: 0;
+    display: block;
+    height: 100%;
+    padding: utils.rem(0 spacing.$medium);
+
+    &[aria-current='true'],
+    &[aria-current='page'] {
+      background: transparent;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    // Use pseudo to centrally align text
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    &:visited,
+    &:hover,
+    &:active {
+      border: 0;
+    }
+  }
+}
+
+.image {
+  height: 100%;
+  padding: utils.rem(spacing.$small + spacing.$x-small 0);
+}

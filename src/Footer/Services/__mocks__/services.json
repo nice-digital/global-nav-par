@@ -1,0 +1,25 @@
+{
+  "external": [
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url1/",
+      "text": "First link",
+      "id": "link1",
+      "footer": true
+    },
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url2/",
+      "text": "Second link",
+      "id": "link2",
+      "footer": false
+    },
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url3/",
+      "text": "Third link",
+      "id": "link3",
+      "footer": true
+    }
+  ]
+}

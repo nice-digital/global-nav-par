@@ -1,0 +1,145 @@
+@use '../../../../styles/global-nav-colours' as *;
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+@use '@nice-digital/nds-core/scss/typography';
+
+.listUnstyled {
+  @include typography.list;
+  list-style: none !important;
+  margin-left: 0;
+  max-width: none; // To override max-width of 66ch set on lists
+  padding: 0;
+
+  li {
+    margin-bottom: utils.rem(spacing.$small);
+  }
+}
+
+.listColumnar {
+  @extend .listUnstyled;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+
+  p {
+    margin: 0;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  @include media-queries.mq($from: md) {
+    li {
+      margin-bottom: utils.rem(spacing.$large);
+      padding-right: utils.rem(spacing.$small);
+      width: calc(100% / 3);
+    }
+  }
+}
+
+// IE11 needs width declaring explicitly to text wrap properly under flexbox
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .listColumnar li {
+    max-width: 50%;
+  }
+}
+
+.aboutCol {
+  flex-basis: auto;
+
+  &.aboutCol1 {
+    flex-shrink: 0;
+  }
+}
+
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: utils.rem(spacing.$small);
+  list-style: none;
+  margin: utils.rem(0 0 spacing.$medium);
+  max-width: 90%;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.chunkyLetter {
+  @include typography.font-size(h4);
+  color: colours.$text;
+
+  span {
+    width: 3.95ch;
+  }
+}
+
+.inlineList {
+  li {
+    display: inline-block;
+    margin-right: utils.rem(spacing.$large);
+  }
+}
+
+.letter {
+  display: inline-block;
+  font-weight: bold;
+  margin: utils.rem(0 spacing.$small spacing.$small 0);
+  text-transform: uppercase;
+
+  a,
+  span {
+    display: block;
+    padding: utils.rem(spacing.$small 0);
+    text-align: center;
+  }
+
+  a {
+    background: $body;
+    border: 1px solid colours.$border;
+    text-decoration: none;
+    width: 4.95ch;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+// The buttons kept dancing on the BNF
+html body a.btn,
+html body button.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    border: utils.em(1px) solid colours.$btn-primary-text !important;
+  }
+
+  &--cta {
+    &:hover,
+    &:focus,
+    &:active {
+      border: utils.em(1px) solid colours.$btn-cta-text !important;
+    }
+  }
+
+  &--secondary {
+    &:hover,
+    &:focus,
+    &:active {
+      border: utils.em(1px) solid colours.$btn-secondary-text !important;
+    }
+  }
+
+  &--inverse {
+    &:hover,
+    &:focus,
+    &:active {
+      border: utils.em(1px) solid colours.$btn-inverse-text !important;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use '../../../../styles/global-nav-colours' as *;
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/focus';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
+// Mostly copied from nds-button
+$nds-button-border-radius: utils.em(3px);
+
+.button {
+  border: utils.em(1px) solid colours.$btn-primary-text;
+  border-radius: $nds-button-border-radius;
+  box-shadow: 0 utils.em(3px) utils.em(6px) 0 $button-shadow-colour;
+  color: colours.$btn-primary-text !important;
+  display: inline-block;
+  font-family: inherit;
+  margin: utils.em(
+    0 spacing.$small spacing.$small -4px
+  ); // Negative left margin to combat inline-block gaps
+  padding: utils.em(spacing.$small spacing.$medium);
+  position: relative;
+  text-align: left;
+  text-decoration: none !important;
+  vertical-align: top;
+  white-space: nowrap;
+
+  &:visited {
+    color: colours.$btn-primary-text;
+  }
+
+  &:hover {
+    background: colours.$btn-primary-hover;
+    box-shadow: 0 utils.em(5px) utils.em(8px) 0 $button-shadow-colour;
+    color: colours.$btn-primary-text;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include focus.default-focus-style;
+    background: colours.$btn-primary;
+    border-color: colours.$focus-inverse;
+    color: colours.$btn-primary-text;
+  }
+
+  &:active {
+    background: colours.$btn-primary-hover;
+    text-decoration: none;
+    top: utils.em(2px);
+  }
+}
+
+.primary {
+  background: colours.$btn-primary;
+}
+
+.cta {
+  background: colours.$btn-cta;
+  border: utils.em(1px) solid colours.$btn-cta-border;
+  color: colours.$btn-cta-text !important;
+
+  &:visited {
+    color: colours.$btn-cta-text;
+  }
+
+  &:hover {
+    background: colours.$btn-cta-hover;
+    color: colours.$btn-cta-text;
+  }
+
+  &:focus {
+    background: colours.$btn-cta-hover;
+  }
+
+  &:active {
+    background: colours.$btn-cta-hover;
+  }
+}

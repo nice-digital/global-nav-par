@@ -1,0 +1,34 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.prettierPath": "./node_modules/prettier",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "files.eol": "\n",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "obj": true,
+    "bin": true,
+    "publish": true,
+    "coverage": true,
+    "dist": true,
+    "lib": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#8f4e4d",
+    "activityBar.foreground": "#000",
+    "activityBar.inactiveForeground": "#FFFDE1",
+    "titleBar.activeBackground": "#8f4e4d",
+    "titleBar.activeForeground": "#FFFDE1"
+  },
+  "omnisharp.autoStart": false
+}

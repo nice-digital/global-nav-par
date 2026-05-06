@@ -1,0 +1,105 @@
+{
+  "external": [
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url1/",
+      "text": "First link",
+      "id": "more-from-nice",
+      "header": true
+    },
+    {
+      "host": "www.test-link2.nice.org",
+      "landingPath": "/url2/",
+      "text": "Second link",
+      "id": "link2",
+      "header": true,
+      "abbreviation": "lnk2",
+      "title": "Second link abbreviation title",
+      "links": [
+        {
+          "text": "Sub link 1",
+          "href": "/"
+        },
+        {
+          "text": "Sub link 2",
+          "href": "/test"
+        }
+      ]
+    },
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url3/",
+      "text": "Third link",
+      "id": "link3",
+      "header": true,
+      "abbreviation": "lnk3",
+      "title": "Third link abbreviation title",
+      "links": [
+        {
+          "text": "Sub link 1",
+          "href": "/"
+        },
+        {
+          "text": "Sub link 2",
+          "href": "/test"
+        }
+      ],
+      "nestedLinks": [
+        {
+          "href": "https://nestedLink1",
+          "text": "Nested link one",
+          "id": "nested-1"
+        },
+        {
+          "href": "https://nestedLink2",
+          "text": "Nested link two",
+          "id": "nested-2"
+        }
+      ]
+    },
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/url4/",
+      "text": "Fourth link",
+      "id": "test-service",
+      "header": true
+    }
+  ],
+  "internal": [
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/first-internal-service",
+      "text": "First internal service",
+      "id": "internal1",
+      "header": true,
+      "links": [
+        {
+          "text": "internal1 sub link 1",
+          "href": "/i1sublink1"
+        },
+        {
+          "text": "internal1 sub link 2",
+          "href": "/i2sublink2"
+        }
+      ]
+    },
+    {
+      "host": "www.test.nice.org",
+      "landingPath": "/second-internal-service",
+      "href": "/",
+      "text": "Second internal service",
+      "id": "internal2",
+      "header": true,
+      "links": [
+        {
+          "text": "internal2 sub link 1",
+          "href": "/i2sublink1"
+        },
+        {
+          "text": "internal2 sub link 2",
+          "href": "/i2sublink2"
+        }
+      ]
+    }
+  ]
+}

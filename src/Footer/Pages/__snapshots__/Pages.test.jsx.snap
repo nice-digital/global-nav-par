@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages Matches snapshot 1`] = `
+<div>
+  <nav
+    class="wrapper"
+  >
+    <ul
+      class="list"
+    >
+      <li>
+        <a
+          href="https://www.nice.org.uk/what-nice-does"
+        >
+          What NICE does
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/implementing-nice-guidance"
+        >
+          Implementing NICE guidance
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/get-involved"
+        >
+          Get involved
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/about-us"
+        >
+          About us
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/careers"
+        >
+          Careers
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/news"
+        >
+          News, blogs and podcasts
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/nice-newsletters-and-alerts"
+        >
+          Newsletters and alerts
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/contact-us"
+        >
+          Contact us
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/website-feedback"
+        >
+          Leave feedback
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/reusing-our-content"
+        >
+          Reusing our content
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/reusing-our-content/nice-uk-open-content-licence"
+        >
+          NICE UK Open Content Licence
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/reusing-our-content/nice-syndication-api"
+        >
+          Syndicate our content
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nice.org.uk/events"
+        >
+          Events
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

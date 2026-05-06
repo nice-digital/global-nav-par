@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackedLink Matches snapshot 1`] = `
+<div>
+  <a
+    class="className"
+    href="/a-url"
+  >
+    Some text
+  </a>
+</div>
+`;

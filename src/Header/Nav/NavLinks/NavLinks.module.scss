@@ -1,0 +1,98 @@
+/* stylelint-disable no-descending-specificity */
+
+@use '../../../styles/global-nav-colours' as *;
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+@use '../../header-settings';
+@use '../../../Common.module.scss';
+@use '../Nav.module.scss';
+
+.menuList {
+  @extend .menuList;
+}
+
+// IE11 needs width declaring explicitly to text wrap properly under flexbox
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menuList > li {
+    flex-basis: 100%;
+  }
+}
+
+a.link,
+button.link {
+  @extend .linkStyling;
+  column-gap: utils.rem(spacing.$small);
+  padding: utils.rem(spacing.$small);
+
+  &:visited {
+    color: $nav-link-text !important;
+  }
+
+  &[aria-current='true'],
+  &[aria-current='page'],
+  &:hover {
+    color: $nav-link-hover-text !important;
+  }
+
+  // reduce chevron size on smaller viewport to prevent back-to-top floating issue when site is wider than content
+  svg {
+    max-height: 0.8rem;
+    max-width: 0.8rem;
+  }
+
+  @include media-queries.mq($from: lg) {
+    padding: utils.rem(spacing.$medium);
+
+    svg {
+      max-height: 1rem;
+      max-width: 1rem;
+    }
+  }
+}
+
+.dropdown {
+  background-color: $body;
+  box-shadow: 0 utils.rem(spacing.$small) utils.rem(spacing.$small) 0
+    rgba(0 0 0 / 10%);
+  display: none;
+  left: 0;
+  position: relative;
+  width: 100%;
+  z-index: header-settings.$base-z-index;
+
+  &.active {
+    display: block;
+  }
+
+  @include media-queries.mq($from: md) {
+    position: absolute;
+  }
+}
+
+.icon {
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-left: utils.rem(spacing.$x-small);
+  margin-top: utils.rem(spacing.$x-small);
+  vertical-align: text-top;
+
+  @include media-queries.mq($from: md) {
+    margin-left: 0;
+  }
+}
+
+.nonJsDropdown {
+  @include typography.links-inverse;
+  background-color: $dropdown-nonjs-background;
+  display: none;
+  list-style: none;
+  padding: utils.rem(spacing.$small);
+  position: absolute;
+
+  &:target {
+    display: block;
+  }
+}

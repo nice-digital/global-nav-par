@@ -1,0 +1,56 @@
+@use '../../../styles/global-nav-colours' as *;
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
+// This file is here to normalise the appearance of the global nav on pages that also include NICE bootstrap or other conflicting styling
+
+.wrapper {
+  h2 {
+    @include typography.font-size(h2);
+    font-family: typography.get-font-family(serif);
+    margin-top: 0;
+  }
+
+  h3 {
+    @include typography.font-size(h4);
+    font-family: typography.get-font-family(serif);
+    margin-top: utils.rem(spacing.$large);
+  }
+
+  h4 {
+    @include typography.font-size(h5);
+    margin-top: utils.rem(spacing.$medium);
+  }
+
+  a {
+    color: colours.$link;
+    font-weight: normal;
+    text-decoration-line: underline;
+
+    &:hover {
+      color: colours.$link-hover;
+    }
+
+    &:visited {
+      color: colours.$link-visited;
+    }
+  }
+
+  p {
+    max-width: 66ch;
+  }
+
+  ul {
+    @include typography.list;
+    list-style: none !important;
+    margin-left: 0;
+    max-width: none; // To override max-width of 66ch set on lists
+    padding: 0;
+  }
+
+  li {
+    margin-left: 0;
+  }
+}

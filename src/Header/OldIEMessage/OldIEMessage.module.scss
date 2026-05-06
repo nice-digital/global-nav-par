@@ -1,0 +1,35 @@
+@use '@nice-digital/nds-core/scss/colours';
+@use '@nice-digital/nds-core/scss/layout';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/typography';
+@use '@nice-digital/nds-core/scss/utils';
+
+.container {
+  @include layout.container;
+  margin-bottom: utils.rem(spacing.$medium);
+}
+
+.alert {
+  background: colours.$caution-background;
+  border: 1px solid colours.$caution;
+  margin: utils.rem(spacing.$medium) auto 0 auto;
+  max-width: utils.rem(layout.$container-max-width);
+  padding: utils.rem(spacing.$medium);
+
+  a {
+    @include typography.link-default;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h2,
+  p {
+    max-width: 600px;
+  }
+}
+
+.lastP {
+  margin-bottom: 0;
+}

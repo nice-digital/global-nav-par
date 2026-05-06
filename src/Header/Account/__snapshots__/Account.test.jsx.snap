@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account Matches snapshot when logged in 1`] = `
+<div>
+  <div
+    class="account"
+    data-tracking="Account panel"
+  >
+    <button
+      aria-controls="my-account"
+      aria-expanded="false"
+      aria-haspopup="menu"
+      class="button myAccount"
+      id="my-account-button"
+    >
+      My account
+    </button>
+    <ul
+      aria-hidden="true"
+      aria-labelledby="my-account-button"
+      class="menu"
+      id="my-account"
+      role="menu"
+    >
+      <li
+        role="presentation"
+      >
+        <a
+          data-hj-suppress=""
+          href="https://accounts.nice.org.uk/users/12345/editprofile"
+          role="menuitem"
+        >
+          Joe Bloggs
+        </a>
+      </li>
+      <li
+        role="presentation"
+      >
+        <a
+          href="https://accounts.nice.org.uk/signout"
+          role="menuitem"
+        >
+          Sign out
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Account Matches snapshot when logged in using IDAM 1`] = `
+<div>
+  <div
+    class="account"
+    data-tracking="Account panel"
+  >
+    <button
+      aria-controls="my-account"
+      aria-expanded="false"
+      aria-haspopup="menu"
+      class="button myAccount"
+      id="my-account-button"
+    >
+      My account
+    </button>
+    <ul
+      aria-hidden="true"
+      aria-labelledby="my-account-button"
+      class="menu"
+      id="my-account"
+      role="menu"
+    >
+      <li>
+        <span>
+          Joe Bloggs
+        </span>
+      </li>
+      <li
+        role="presentation"
+      >
+        <a
+          href="https:/identity.nice.org.uk/signout"
+          role="menuitem"
+        >
+          Sign out
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Account Matches snapshot when logged out 1`] = `
+<div>
+  <a
+    class="button"
+    data-tracking="Sign in"
+    href="https://accounts.nice.org.uk/signin"
+  >
+    Sign in
+  </a>
+</div>
+`;
+
+exports[`Account Matches snapshot when logged out using IDAM 1`] = `
+<div>
+  <a
+    class="button"
+    data-tracking="Sign in"
+    href="/signin"
+  >
+    sign in
+  </a>
+</div>
+`;

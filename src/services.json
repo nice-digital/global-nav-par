@@ -1,0 +1,175 @@
+{
+  "external": [
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/guidance",
+      "text": "Guidance",
+      "id": "guidance",
+      "footer": true,
+      "header": true
+    },
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/standards-and-indicators",
+      "text": "Standards\u00A0and indicators",
+      "id": "standards-and-indicators",
+      "footer": true,
+      "header": true
+    },
+    {
+      "host": "cks.nice.org.uk",
+      "landingPath": "/",
+      "text": "Clinical\u00A0Knowledge Summaries (CKS)",
+      "abbreviation": "CKS",
+      "title": "Clinical Knowledge Summaries",
+      "id": "cks",
+      "footer": true,
+      "header": true,
+      "links": [
+        {
+          "image": "cks",
+          "text": "CKS - homepage",
+          "href": "/"
+        },
+        {
+          "text": "Health topics A to Z",
+          "href": "/topics/"
+        },
+        {
+          "text": "Specialities",
+          "href": "/specialities/"
+        },
+        {
+          "text": "What's new",
+          "href": "/whats-new/"
+        },
+        {
+          "text": "About CKS",
+          "href": "/about/"
+        }
+      ]
+    },
+    {
+      "host": "bnf.nice.org.uk",
+      "landingPath": "/",
+      "text": "British National Formulary\u00A0(BNF)",
+      "abbreviation": "BNF",
+      "title": "British National Formulary",
+      "id": "bnf",
+      "footer": true,
+      "header": true,
+      "links": [
+        {
+          "image": "bnf",
+          "text": "BNF - homepage",
+          "href": "/"
+        },
+        {
+          "text": "Drugs",
+          "href": "/drugs/"
+        },
+        {
+          "text": "Interactions",
+          "href": "/interactions/"
+        },
+        {
+          "text": "Treatment summaries",
+          "href": "/treatment-summaries/"
+        },
+        {
+          "text": "What's changed?",
+          "href": "/about/changes/"
+        },
+        {
+          "text": "About BNF",
+          "href": "/about/"
+        }
+      ]
+    },
+    {
+      "host": "bnfc.nice.org.uk",
+      "landingPath": "/",
+      "text": "BNF for Children\u00A0(BNFC)",
+      "abbreviation": "BNFC",
+      "title": "British National Formulary for Children",
+      "id": "bnfc",
+      "footer": true,
+      "header": true,
+      "links": [
+        {
+          "image": "bnfc",
+          "text": "BNF for Children - homepage",
+          "href": "/"
+        },
+        {
+          "text": "Drugs",
+          "href": "/drugs/"
+        },
+        {
+          "text": "Interactions",
+          "href": "/interactions/"
+        },
+        {
+          "text": "Treatment summaries",
+          "href": "/treatment-summaries/"
+        },
+        {
+          "text": "What's changed?",
+          "href": "/about/changes/"
+        },
+        {
+          "text": "About BNFC",
+          "href": "/about/"
+        }
+      ]
+    },
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/about/what-we-do/life-sciences",
+      "text": "Life sciences",
+      "id": "life-sciences",
+      "footer": true,
+      "header": true
+    },
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/more-from-nice",
+      "text": "More\u00A0from NICE",
+      "id": "more-from-nice",
+      "header": true,
+      "footer": false
+    },
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/library-and-knowledge-services",
+      "title": "Library and knowledge services",
+      "text": "Library and knowledge services",
+      "id": "knowledge-services",
+      "footer": true,
+      "header": false
+    }
+  ],
+  "internal": [
+    {
+      "host": "www.nice.org.uk",
+      "landingPath": "/guidance/indevelopment?ndt=Guidance&ndt=Quality%20standard",
+      "text": "NICE In development",
+      "id": "indev",
+      "header": true,
+      "links": [
+        {
+          "text": "Guidance projects",
+          "href": "/"
+        },
+        {
+          "text": "Advice projects",
+          "href": "/adviceprojects"
+        },
+        {
+          "text": "Other projects",
+          "href": "/otherprojects"
+        }
+      ]
+    }
+  ]
+}

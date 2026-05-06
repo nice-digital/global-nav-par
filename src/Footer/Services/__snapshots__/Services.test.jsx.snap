@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services Matches snapshot 1`] = `
+<div>
+  <nav
+    aria-label="Our services"
+    class="wrapper"
+  >
+    <ul
+      class="list"
+    >
+      <li>
+        <a
+          class="link"
+          href="https://www.test.nice.org/url1/"
+        >
+          First link
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="https://www.test.nice.org/url3/"
+        >
+          Third link
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

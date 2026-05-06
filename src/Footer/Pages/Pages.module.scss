@@ -1,0 +1,48 @@
+@use 'sass:math';
+@use '@nice-digital/nds-core/scss/media-queries';
+@use '@nice-digital/nds-core/scss/spacing';
+@use '@nice-digital/nds-core/scss/utils';
+
+.wrapper {
+  margin: utils.rem(0 0 spacing.$large);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: utils.rem(0 0 spacing.$x-small);
+  }
+}
+
+@include media-queries.mq($from: xs) {
+  .list {
+    column-count: 2;
+    column-gap: utils.rem(spacing.$medium);
+  }
+}
+
+@include media-queries.mq($from: sm) {
+  .wrapper {
+    float: left;
+    margin: 0;
+    padding: utils.rem(0 0 0 spacing.$large);
+    width: math.percentage(math.div(2, 3));
+  }
+}
+
+@include media-queries.mq($from: md) {
+  .wrapper {
+    float: left;
+    margin: 0;
+    padding: utils.rem(0 spacing.$large);
+    width: 50%;
+  }
+
+  .list {
+    column-count: 2;
+    column-gap: utils.rem(spacing.$medium);
+  }
+}

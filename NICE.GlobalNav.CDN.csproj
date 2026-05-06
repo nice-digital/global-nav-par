@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<Title>Global Nav CDN</Title>
+		<Description>Global Nav deployment package for the NICE CDN</Description>
+		<RepositoryUrl>https://github.com/nice-digital/global-nav</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="dist\*" Exclude="dist/*.html">
+			<Pack>true</Pack>
+			<PackagePath>global-nav</PackagePath>
+		</Content>
+		<Content Include="dist\*" Exclude="dist/*.html">
+			<Pack>true</Pack>
+			<PackagePath>global-nav/$(Version)</PackagePath>
+		</Content>
+	</ItemGroup>
+</Project>
