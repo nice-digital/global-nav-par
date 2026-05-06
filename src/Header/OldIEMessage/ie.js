@@ -1,4 +1,4 @@
-// See https://gist.github.com/padolsey/527683#gistcomment-768383
+// See https://gist.github.com/padolsey/527683#gistcomment-768383 GLOBAL-NAV-PAR
 export const getIEVersion = () => {
 	if (typeof document === "undefined") return void 0;
 	let tmp = (document["documentMode"] || document.attachEvent) && "ev",
