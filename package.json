@@ -29,7 +29,7 @@
     "// LIFECYCLE HOOKS": "",
     "prepare": "npm run es5ify",
     "// TEAMCITY": "",
-    "audit:teamcity": "npm audit --registry=https://registry.npmjs.org/ --audit-level=moderate --json|npm-audit-reporter-teamcity",
+    "audit:teamcity": "npm audit --registry=https://registry.npmjs.org/ --omit=dev --audit-level=moderate --json|npm-audit-reporter-teamcity",
     "audit:teamcity:moderate": "npm audit --registry=https://registry.npmjs.org/ --omit=dev --audit-level=moderate --json | npm-audit-reporter-teamcity",
     "audit:teamcity:high": "npm audit --registry=https://registry.npmjs.org/ --omit=dev --audit-level=high --json | npm-audit-reporter-teamcity",
     "audit:teamcity:critical": "npm audit --registry=https://registry.npmjs.org/ --omit=dev --audit-level=critical --json | npm-audit-reporter-teamcity"
