@@ -29,7 +29,10 @@
     "// LIFECYCLE HOOKS": "",
     "prepare": "npm run es5ify",
     "// TEAMCITY": "",
-    "audit:teamcity": "npm audit --audit-level=moderate --json|npm-audit-reporter-teamcity"
+    "audit:teamcity": "npm audit --audit-level=moderate --json|npm-audit-reporter-teamcity",
+    "audit:teamcity:moderate": "npm audit --omit=dev --audit-level=moderate --json | npm-audit-reporter-teamcity",
+    "audit:teamcity:high": "npm audit --omit=dev --audit-level=high --json | npm-audit-reporter-teamcity",
+    "audit:teamcity:critical": "npm audit --omit=dev --audit-level=critical --json | npm-audit-reporter-teamcity"
   },
   "author": "NICE Digital Services (https://github.com/nice-digital/global-nav/graphs/contributors)",
   "contributors": [
