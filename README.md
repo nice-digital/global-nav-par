@@ -869,4 +869,4 @@ Migration from Webpack to Vite, a faster build tool. Vite provides improved perf
 
 ### Easier transition to TypeScript
 
-With the migration to Vite, transitioning to TypeScript in the future will be more straightforward. Vite's TypeScript support will make the process smoother when the time comes for the project to adopt TypeScript.
+With the migration to Vite, transitioning to TypeScript in the future will be more straightforward. Vite's TypeScript support will make the process smoother when the time comes for the project to adopt TypeScript..
