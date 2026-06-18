@@ -1,4 +1,4 @@
-# Global navigation
+# Global navigation 2
 
 > Global header and footer used across all NICE digital services
 
