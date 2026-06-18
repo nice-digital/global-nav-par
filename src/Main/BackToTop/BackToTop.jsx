@@ -30,7 +30,7 @@ export const BackToTop = function () {
 					onClick={handleClick}
 				>
 					<Container className={styles.container}>
-						<ChevronUp /> Back to top
+						<ChevronUp /> Back to the top
 					</Container>
 				</a>
 			</nav>
