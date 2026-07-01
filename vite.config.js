@@ -45,7 +45,7 @@ export default defineConfig(({ mode }) => {
 				},
 				output: [
 					{
-						entryFileNames: "global-nav-par.min.js", // Set the output file name
+						entryFileNames: "global-nav.min.js", // Set the output file name
 						chunkFileNames: "[name].[hash].js", // set the chunk file names
 						assetFileNames: "[name].[hash].[ext]", //set the asset file names
 						format: "iife", // Or other format like 'umd', 'cjs', etc.
@@ -69,7 +69,7 @@ export default defineConfig(({ mode }) => {
 						],
 					},
 					{
-						entryFileNames: "global-nav-par.js", // Set the output file name
+						entryFileNames: "global-nav.js", // Set the output file name
 						chunkFileNames: "[name].[hash].js", // set the chunk file names
 						assetFileNames: "[name].[hash].[ext]", //set the asset file names
 						format: "iife", // Or other format like 'umd', 'cjs', etc.
